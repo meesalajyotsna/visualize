@@ -30,14 +30,16 @@ for i in range(0, num_episodes):
   engine.render(runner.state_trajectory)
 ```
 """
-
+## Standard library imports
 import re
 import json
+from string import Template
 
+#Third-party library imports
 import pandas as pd
 import numpy as np
 
-from string import Template
+#Local application/library imports
 from agent_torch.core.helpers import get_by_path
 
 geoplot_template = """
